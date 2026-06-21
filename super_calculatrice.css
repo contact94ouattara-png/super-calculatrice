@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: rgba(11, 11, 11, 0.8);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#titre{
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-family: "Chivo Mono";
+    display: flex;
+    align-items: center;
+    color: wheat;
+}
+
+#titre span{
+    color:rgb(35, 13, 236);
+    font-weight: 600; 
+    font-size: 2em;
+    font-style: italic;
+}
+
+#titre #js{
+    font-family: "Chivo Mono";
+    font-style: italic;
+    background:rgb(232, 250, 30);
+    color: black;
+    font-weight: 600; 
+    font-size: 2em;
+    border-radius: 2px;
+    width: 65px;
+    height: 50px;
+    margin-left: 5px;
+    padding: 0px;
+    text-align: center;
+}
+
+.superCalc{
+    background: rgba(11, 11, 11, 0.01);
+    height: 670px;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "scren scren scren scren" 
+    "ac div mlt del"
+    "sept huit nef moins"
+    "qtre cinq six plus"
+    "un deux trois pourct"
+    "virgil zero equal equal";
+    gap: 10px;
+}
+button{
+    border: 0;
+    font-size: 3em;
+    font-family: "Chivo Mono";
+    background: rgba(0, 1, 0, 0.31);
+    color: white;
+    cursor: pointer;
+}
+.number{
+    border-radius: 50%;
+}
+.operator{
+    border-radius: 50%;
+    color: rgb(36, 13, 247);
+}
+#mySc{
+    grid-area: scren;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: 5px;
+    padding: 5px;
+    font-family: "Chivo Mono";
+    font-size: 2em;
+}
+#ac{
+    grid-area: ac;
+    border-radius: 50%;
+    color: rgb(239, 1, 1);
+}
+#del{
+    border-radius: 50%;
+    grid-area: del;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    background: none;
+    color: blue;
+    height:50px;
+}
+#virgil{
+    grid-area: virgil;
+    border-radius: 50%;
+}
+#equal{
+    grid-area: equal;
+    border-radius: 50%;
+    background: rgb(59, 40, 236);
+}
+#mlt{
+    grid-area: mlt;
+}
+#moins{
+    grid-area: moins;
+}
+#div{
+    grid-area: div;
+}
+#zero{
+    grid-area: zero;
+}
+#pourcentage{
+    grid-area: pourct;
+}
+#un{
+    grid-area: un;
+}
+#deux{
+    grid-area: deux;
+}
+#trois{
+    grid-area: trois;
+}
+#quatre{
+    grid-area: qtre;
+}
+#cinq{
+    grid-area: cinq;
+}
+#six{
+    grid-area: six;
+}
+#sept{
+    grid-area: sept;
+}
+#huit{
+    grid-area: huit;
+}
+#nef{
+    grid-area: nef;
+}
+@media (max-width: 838px) {
+    .superCalc{
+        width: 560px;
+        margin-left: 60px;
+        gap: 5px;
+        font-size: 0.8em;
+    } 
+}
+@media (max-width: 568px) {
+    .superCalc{
+        width: 400px;
+        margin-left: 60px;
+        gap: 5px;
+        font-size: 0.8em;
+    }
+    
+}
